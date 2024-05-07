@@ -1,0 +1,47 @@
+/* style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    align-items: flex-start; /* Adjusts alignment of items to start at the top */
+}
+
+#left-panel {
+    width: 200px;
+    background-color: #F4DE4B;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* Allows scrolling if items exceed panel height */
+}
+
+#canvas {
+    flex-grow: 1; /* Allows canvas to take remaining space */
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+#right-toolbar {
+    width: 200px;
+    background-color: #F4DE4B;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* Allows scrolling if items exceed panel height */
+}
+
+#right-toolbar button,
+#left-panel button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer; /* Makes the cursor a pointer when hovering over the buttons */
+}
